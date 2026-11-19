@@ -8,6 +8,10 @@
     <link href = "./css/style.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Site navigation: Bootstrap navbar copied onto all four pages.
+     The logo links to Home. On narrow screens the links collapse into a
+     hamburger menu, which depends on the Bootstrap JS bundle at the bottom of the page.
+     On each page, "active" and aria-current="page" go on that page's own link. -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -26,24 +30,30 @@
             </div>
         </div>
     </nav>
+    <!-- Main content for the Absence Emails page: using trip travel dates saved in localStorage, 
+     missed classes will be identified and email absence notification drafts created. -->
     <main>
-        <!--  -->
+        <!-- Page introduction: feature name and one-line purpose -->
         <h1>Absence Email Generator</h1>
-        <p>This page will help draft absence email notifications to send to their instructors.</p> 
-       <section>
-        <!--  -->
+        <p>This page will draft absence email notifications students send to their instructors.</p> 
+       <!-- Your Classes: the student enters the classes, instructors, and make-up plan information for instructional content
+         missed for travel (input fields and drop-down menus come next). Currently placeholder text only. -->
+        <section>
             <h2>Your Classes</h2>
-            <p>This is where a student will identify classes missed for travel.</p>
+            <p>This is where a student will identify classes, instructor, and content missed for travel.</p>
        </section>
+       <!-- Your Emails: a ready-to-copy absence email draft for each class entered above. 
+        Currently placeholder text only. -->
        <section>
-        <!--  -->
             <h2>Your Emails</h2>
-            <p>This feature uses travel dates to assist a student with generation of absence notifications to send to instructors.</p>
-       </section>
+            <p>This is where absence email notification drafts will appear for a student to cut/paste/send to their instructors.</p>
+            <p>The draft notification will include subject line and body text specific to class date missed and make-up plan for missed class activity.</p>
+        </section>
     </main>
-    <footer>
-    <!-- content still not identified -->
-    </footer>
+    <!-- TODO - identify and build content -->
+    <footer></footer>
+    <!-- Scripts load last so the page content exists first. The Bootstrap bundle powers
+     the navbar's hamburger menu and must come before our own script.js. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>  
 </body>

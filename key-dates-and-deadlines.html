@@ -8,6 +8,10 @@
     <link href = "./css/style.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Site navigation: Bootstrap navbar copied onto all four pages.
+     The logo links to Home. On narrow screens the links collapse into a
+     hamburger menu, which depends on the Bootstrap JS bundle at the bottom of the page.
+     On each page, "active" and aria-current="page" go on that page's own link. -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -26,6 +30,7 @@
             </div>
         </div>
     </nav>
+    <!-- Main content for the Home page: introduction, trip details, and links to the three feature pages. -->
     <main>
         <!--  -->
         <h1>Key Dates and Deadlines</h1>
@@ -37,9 +42,10 @@
             <h2>Notes</h2>
        </section>
     </main>
-    <footer>
-    <!-- content still not identified -->
-    </footer>
+    <!-- TODO - identify and build content -->
+    <footer></footer>
+    <!-- Scripts load last so the page content exists first. The Bootstrap bundle powers
+     the navbar's hamburger menu and must come before our own script.js. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>  
 </body>
