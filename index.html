@@ -8,6 +8,10 @@
     <link href = "./css/style.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Site navigation: Bootstrap navbar copied onto all four pages.
+     The logo links to Home. On narrow screens the links collapse into a
+     hamburger menu, which depends on the Bootstrap JS bundle at the bottom of the page.
+     On each page, "active" and aria-current="page" go on that page's own link. -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -26,35 +30,41 @@
             </div>
         </div>
     </nav>
+    <!-- Main content for the Home page: introduction, trip details, and links to the three feature pages. -->
     <main>
+        <!-- Page introduction: app name and one-line purpose -->
        <section>
-        <!-- hero image or headline -->
-            <img alt="" src="./images/Athletic_Horizontal_Light_RGB.png" width="25%"/>
+            <img src="./images/Athletic_Horizontal_Light_RGB.png" width="25%" alt="Nebraska Wesleyan University logo featuring a coyote head and text in gold, white, and black." />
             <h1>Traveling Prairie Wolf</h1>
             <p>This app is designed to help a college student prepare for upcoming travel responsibly.</p>
-       </section> 
+       </section>
+        <!-- Your Trip: the student enters trip details here (trip name, destination, travel dates).
+         script.js will save them to localStorage so the other three pages can use them.
+         Currently placeholder text only; the input fields come next. -->
        <section>
-        <!-- your trip -->
             <h2>Your Trip</h2>
             <p>This is where a student will input travel dates and destination.</p>
        </section>
+        <!-- Feature Areas: a description and link for each of the three feature pages
+        (Absence Emails, Destination Weather, Key Dates and Deadlines). -->
        <section>
-        <!-- feature areas -->
             <h2>Trip Planning</h2>
             <h3>Absence Email Generator</h3>
-            <a href="./absence_emails.html" class="btn btn-primary">Absence Emails</a>
+            <a href="./absence-emails.html" class="btn btn-primary">Absence Emails</a>
             <p>This feature uses travel dates to assist a student with generation of absence notifications to send to instructors.</p>
-            <h3>Desination Weather</h3>
-            <a href="./destination_weather.html" class="btn btn-primary">Destination Weather</a>
+            <h3>Destination Weather</h3>
+            <a href="./destination-weather.html" class="btn btn-primary">Destination Weather</a>
             <p>This feature uses travel dates and weather API to show the destination weather.</p>
             <h3>Key Dates and Deadlines</h3>
-            <a href="./key_dates_and_deadlines.html" class="btn btn-primary">Key Dates and Deadlines</a>
+            <a href="./key-dates-and-deadlines.html" class="btn btn-primary">Key Dates and Deadlines</a>
             <p>This feature lists key campus academic dates and deadlines.</p>
        </section>
     </main>
     <footer>
-    <!-- content still not identified -->
+    <!-- TODO - identify and build content -->
     </footer>
+    <!-- Scripts load last so the page content exists first. The Bootstrap bundle powers
+     the navbar's hamburger menu and must come before our own script.js. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>  
 </body>
