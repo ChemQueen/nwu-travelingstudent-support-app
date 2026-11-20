@@ -30,6 +30,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Main content for the Home page: introduction, trip details, and links to the three feature pages. -->
     <main>
         <!-- Page introduction: app name and one-line purpose -->
@@ -38,13 +39,37 @@
             <h1>Traveling Prairie Wolf</h1>
             <p>This app is designed to help a college student prepare for upcoming travel responsibly.</p>
        </section>
+
         <!-- Your Trip: the student enters trip details here (trip name, destination, travel dates).
-         script.js will save them to localStorage so the other three pages can use them.
-         Currently placeholder text only; the input fields come next. -->
+         script.js will save them to localStorage so the other three pages can use them. -->
        <section>
             <h2>Your Trip</h2>
-            <p>This is where a student will input travel dates and destination.</p>
-       </section>
+            <p>This is where a student will input trip name, destination, and travel dates.</p>
+
+            <!-- Semantic HTML <form> used to group controls for collecting input from a user. -->
+            <!-- id="travel-form" is used by script.js to find it and save info from each of the input fields. -->
+            <form id="travel-form">
+                <!-- label's 'for' matches the input's id -->
+                <label for="trip-name">Trip Name:</label>
+                <input type="text" id="trip-name" name="trip-name" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="depart-date">Departure Date:</label>
+                <input type="date" id="depart-date" name="depart" required>
+
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return" required>
+
+                <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
+
+                <!-- Save confirmation: empty until script.js fills it with a message after the trip is saved.
+                role="status" makes screen readers announce the message when it appears. -->
+                <p id="confirmation-message" role="status"></p>
+            </form>
+        </section>
+
         <!-- Feature Areas: a description and link for each of the three feature pages
         (Absence Emails, Destination Weather, Key Dates and Deadlines). -->
        <section>
