@@ -39,17 +39,19 @@
             <!-- Page introduction: feature name and one-line purpose -->
             <h1>Destination Weather</h1>
             <p>This page will show destination weather and location.</p> 
-        <!-- Event Day Forecast: morning, afternoon and evening weather at the trip destination,
-            from the Open-Meteo API for the travel dates saved in localStorage.
-            Currently placeholder text only. -->
+            <!-- Event Day Forecast: morning, afternoon and evening weather at the trip destination,
+            from the Open-Meteo API for the travel dates saved in localStorage. -->
             <section>
                 <h2>Event Day</h2>
-                    <h3>Morning</h3>
+                    <h3>Morning (10:00 a.m.)</h3>
                     <p>Card showing morning forecast.</p>
-                    <h3>Afternoon</h3>
+                    <p id="morning-forecast"></p>
+                    <h3>Afternoon (2:00 p.m.)</h3>
                     <p>Card showing afternoon forecast.</p>
-                    <h3>Evening</h3>
+                    <p id="afternoon-forecast"></p>
+                    <h3>Evening (6:00 p.m.)</h3>
                     <p>Card showing evening forecast.</p>
+                    <p id="evening-forecast"></p>
         </section>
         <!-- Destination Map: a map of the trip destination, planned from OpenStreetMap.
             Currently placeholder text only. -->

@@ -25,4 +25,25 @@ if (form) {
   })
 };
 
+async function getForecast() {
+  const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=41.2563&longitude=-95.9404&hourly=temperature_2m&timezone=America%2FChicago&temperature_unit=fahrenheit&start_date=2026-11-22&end_date=2026-11-24");
+  const data = await response.json();
+  const amForecastTemp = data.hourly.temperature_2m[10];
+  const midForecastTemp = data.hourly.temperature_2m[14];
+  const pmForecastTemp = data.hourly.temperature_2m[18];
+  console.log(amForecastTemp, midForecastTemp, pmForecastTemp);
+
+  // Update the DOM with the forecast
+  amForecast.textContent = amForecastTemp;
+  midForecast.textContent = midForecastTemp;
+  pmForecast.textContent = pmForecastTemp;
+}
+
+const amForecast = document.getElementById("morning-forecast");
+const midForecast = document.getElementById("afternoon-forecast");
+const pmForecast = document.getElementById("evening-forecast");
+
+if (amForecast) {
+  getForecast();
+};
 
