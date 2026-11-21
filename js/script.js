@@ -28,6 +28,7 @@ if (form) {
 const chosenDate = localStorage.getItem("eventDate");
 
 const url = "https://api.open-meteo.com/v1/forecast?latitude=41.2563&longitude=-95.9404&hourly=temperature_2m&timezone=America%2FChicago&temperature_unit=fahrenheit&start_date=" + chosenDate + "&end_date=" + chosenDate
+console.log(url);
 
 async function getForecast() {
   // Requests hourly temperatures from the Open-Meteo forecast API (no key needed).
