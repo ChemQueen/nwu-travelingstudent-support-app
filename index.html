@@ -42,11 +42,11 @@
                 <p>This app is designed to help a college student prepare for upcoming travel responsibly.</p>
             </section>
 
-            <!-- Your Trip: the student enters trip details here (trip name, destination, travel dates).
+            <!-- Your Trip: the student enters trip details here (trip name, destination, travel dates, and event date).
             script.js will save them to localStorage so the other three pages can use them. -->
             <section>
                 <h2>Your Trip</h2>
-                <p>This is where a student will input trip name, destination, and travel dates.</p>
+                <p>This is where a student will input trip name, destination, travel dates, and event date.</p>
 
                 <!-- Semantic HTML <form> used to group controls for collecting input from a user. -->
                 <!-- id="travel-form" is used by script.js to find it and save info from each of the input fields. -->
@@ -63,6 +63,9 @@
 
                     <label for="return-date">Return Date:</label>
                     <input type="date" id="return-date" name="return" required>
+
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" name="event" required>
 
                     <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
 
@@ -81,7 +84,7 @@
                 <p>This feature uses travel dates to assist a student with generation of absence notifications to send to instructors.</p>
                 <h3>Destination Weather</h3>
                 <a href="./destination-weather.html" class="btn btn-primary">Destination Weather</a>
-                <p>This feature uses travel dates and weather API to show the destination weather.</p>
+                <p>This feature uses event date and weather API to show event day weather.</p>
                 <h3>Key Dates and Deadlines</h3>
                 <a href="./key-dates-and-deadlines.html" class="btn btn-primary">Key Dates and Deadlines</a>
                 <p>This feature lists key campus academic dates and deadlines.</p>

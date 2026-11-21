@@ -1,0 +1,13 @@
+/* Makes the confirmation-message line stand out after user inputs trip information. */
+#confirmation-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* Makes the weather-message line stand out so user is alerted to input travel information. */
+#weather-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(221, 7, 7);
+}

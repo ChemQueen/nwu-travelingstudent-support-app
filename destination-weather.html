@@ -33,8 +33,8 @@
 
     <!-- Bootstrap layout centers the page content and adds margins, mt-4 adds space at top -->
     <div class="container mt-4">
-        <!-- Main content for the Destination Weather page: using trip travel dates and destination saved in localStorage, 
-        weather forecast for morning, afternoon, evening and destination map shown. -->
+        <!-- Main content for the Destination Weather page: using event date and destination saved in localStorage, 
+        weather forecast (currently just temps) for morning, afternoon, evening and destination map shown. -->
         <main>
             <!-- Page introduction: feature name and one-line purpose -->
             <h1>Destination Weather</h1>
@@ -43,6 +43,7 @@
             from the Open-Meteo API for the travel dates saved in localStorage. -->
             <section>
                 <h2>Event Day</h2>
+                    <p id="weather-message"></p>
                     <h3>Morning (10:00 a.m.)</h3>
                     <p>Card showing morning forecast.</p>
                     <p id="morning-forecast"></p>
