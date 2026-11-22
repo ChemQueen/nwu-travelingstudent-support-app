@@ -39,7 +39,7 @@
             Bootstrap row makes a flex container, and the two columns sit side by side
             (2/12 for the logo, 10/12 for the text) on medium screens and wider, stacking on phones.
             align-items-center lines up the text with the middle of the image. -->
-            <section class="row align-items-center">
+            <section class="row align-items-center py-4" id="nwu-lightgold">
                 <div class="col-md-2">
                     <img src="./images/Athletic_Horizontal_Light_RGB.png" width="115" alt="Nebraska Wesleyan University logo featuring a coyote head and text in gold, white, and black." />
                 </div>
@@ -86,29 +86,34 @@
                     <button type="submit" class="btn btn-primary mt-3" id="form-submit">Submit</button>
                     <!-- Save confirmation: empty until script.js fills it with a message after the trip is saved.
                     role="status" makes screen readers announce the message when it appears. -->
-                    <p id="confirmation-message" role="status"></p>
-                    
+                    <p id="confirmation-message" role="status"></p> 
                 </form>
             </section>
             <!-- Feature Areas: a description and link for each of the three feature pages
             (Absence Emails, Destination Weather, Key Dates and Deadlines). -->
-            <section class="mt-4">
+            <section class="mt-4 mb-5 p-3" id="nwu-lightgold">
                 <h2>Trip Planning</h2>
                 <div class="row g-3">
                     <div class="col-md-4">
-                        <h3>Absence Email Generator</h3>
-                        <p>This feature uses travel dates to assist a student with generation of absence notifications to send to instructors.</p>
-                        <a href="./absence-emails.html" class="btn btn-primary">Absence Emails</a>
+                        <div class="nwu-darkgold p-3">
+                            <h3>Absence Email Generator</h3>
+                            <p>This feature uses travel dates to assist a student with generation of absence notifications to send to instructors.</p>
+                            <a href="./absence-emails.html" class="btn btn-primary">Absence Emails</a>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <h3>Destination Weather</h3>
-                        <p>This feature uses event date and weather API to show event day weather.</p>
-                        <a href="./destination-weather.html" class="btn btn-primary">Destination Weather</a>
+                        <div class="nwu-darkgold p-3">
+                            <h3>Destination Weather</h3>
+                            <p>This feature uses event date and weather API to show event day weather.</p>
+                            <a href="./destination-weather.html" class="btn btn-primary">Destination Weather</a>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <h3>Key Dates and Deadlines</h3>
-                        <p>This feature lists key campus academic dates and deadlines.</p>
-                        <a href="./key-dates-and-deadlines.html" class="btn btn-primary">Key Dates and Deadlines</a>
+                        <div class="nwu-darkgold p-3">
+                            <h3>Key Dates and Deadlines</h3>
+                            <p>This feature lists key campus academic dates and deadlines.</p>
+                            <a href="./key-dates-and-deadlines.html" class="btn btn-primary">Key Dates and Deadlines</a>
+                        </div>
                     </div>
                 </div>
             </section>

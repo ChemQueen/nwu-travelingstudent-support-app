@@ -1,3 +1,20 @@
+/* Makes the Home banner fit the university's webpage design. */
+#nwu-lightgold {
+  background-color: #B3A369;
+  border-radius: 0.5rem;
+}
+
+.nwu-darkgold {
+  background-color: #9D8F5F;
+  border-radius: 0.5rem;
+}
+
+.nwu-yellow {
+  background-color: #FBFA06;
+  border-radius: 0.5rem;
+}
+
+
 /* Makes the confirmation-message line stand out after user inputs trip information. */
 #confirmation-message {
   font-size: 1.5rem;
