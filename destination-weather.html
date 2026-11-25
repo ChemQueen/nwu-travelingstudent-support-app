@@ -37,27 +37,30 @@
         weather forecast (currently just temps) for morning, afternoon, evening and destination map shown. -->
         <main>
             <!-- Page introduction: feature name and one-line purpose -->
-            <div class="p-2" id="nwu-lightgold">
-                <h1>Destination Weather</h1>
-                <p>This page will show destination weather and location.</p> 
+            <div class="p-3" id="nwu-lightgold">
+                <h1>Destination Weather and Location</h1>
+                <p>This page will show destination weather and location.</p>
             </div>
 
             <div class="row g-3 mt-4 mb-5 p-3" id="nwu-lightgold">
                 <section class="col-md-6">
                     <!-- Event Day Forecast: morning, afternoon and evening weather at the trip destination,
                     from the Open-Meteo API for the travel dates saved in localStorage. -->
-                    <h2>Event Day</h2>
+                    <h2 id="event-date-location">Event Day</h2>
                     <p id="weather-message"></p>
                     <div class="nwu-darkgold p-3 mb-3">
                         <h3>Morning (10:00 a.m.)</h3>
+                        <p id="morning-temp"></p>
                         <p id="morning-forecast"></p>
                     </div>   
                     <div class="nwu-darkgold p-3 mb-3">
                         <h3>Afternoon (2:00 p.m.)</h3>
+                        <p id="afternoon-temp"></p>
                         <p id="afternoon-forecast"></p>
                     </div>
                     <div class="nwu-darkgold p-3 mb-3">
                         <h3>Evening (6:00 p.m.)</h3>
+                        <p id="evening-temp"></p>
                         <p id="evening-forecast"></p>
                     </div>
                 </section>
