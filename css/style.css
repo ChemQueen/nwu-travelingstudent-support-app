@@ -1,5 +1,5 @@
 /* Makes the Home banner fit the university's webpage design. */
-#nwu-lightgold {
+.nwu-lightgold {
   background-color: #B3A369;
   border-radius: 0.5rem;
 }

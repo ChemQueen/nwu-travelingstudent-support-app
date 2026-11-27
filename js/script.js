@@ -33,6 +33,12 @@ async function getForecast() {
   const data1 = await response1.json();
   const locationLatitude = data1.results[0].latitude;
   const locationLongitude = data1.results[0].longitude;
+  const mapLeft = locationLongitude - 0.05;
+  const mapRight = locationLongitude + 0.05;
+  const mapBottom = locationLatitude - 0.05;
+  const mapTop = locationLatitude + 0.05;
+  const urlMap = "https://www.openstreetmap.org/export/embed.html?bbox=" + mapLeft + "," + mapBottom + "," + mapRight + "," + mapTop + "&layer=mapnik&marker=" + locationLatitude + "," + locationLongitude
+  eventMap.src = urlMap;
   const timeZone = data1.results[0].timezone;
   console.log(locationLatitude);
   console.log(locationLongitude);
@@ -76,6 +82,7 @@ async function getForecast() {
 
 const chosenDate = localStorage.getItem("eventDate");
 const chosenLocation = localStorage.getItem("destination");
+const eventMap = document.getElementById("event-map");
 const amTemp = document.getElementById("morning-temp");
 const amForecast = document.getElementById("morning-forecast");
 const midTemp = document.getElementById("afternoon-temp");

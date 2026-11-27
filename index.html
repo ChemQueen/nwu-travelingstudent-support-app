@@ -36,16 +36,18 @@
         <!-- Main content for the Home page: introduction, trip details, and links to the three feature pages. -->
         <main>
             <!-- Page introduction: app name and one-line purpose.
-            Bootstrap row makes a flex container, and the two columns sit side by side
-            (2/12 for the logo, 10/12 for the text) on medium screens and wider, stacking on phones.
-            align-items-center lines up the text with the middle of the image. -->
-            <section class="row align-items-center py-4" id="nwu-lightgold">
-                <div class="col-md-2">
-                    <img src="./images/Athletic_Horizontal_Light_RGB.png" width="115" alt="Nebraska Wesleyan University logo featuring a coyote head and text in gold, white, and black." />
-                </div>
-                <div class="col-md-10">
-                    <h1>Traveling Prairie Wolf</h1>
-                    <p>This app is designed to help a college student prepare for upcoming travel responsibly.</p>
+            The section holds the gold background and padding at normal width. The Bootstrap row inside it
+            puts the two columns side by side (2/12 for the logo, 10/12 for the text) on medium screens
+            and wider, stacking on phones. align-items-center lines up the text with the middle of the image. -->
+            <section class="p-3 nwu-lightgold">
+                <div class="row align-items-center py-3">
+                    <div class="col-md-2">
+                        <img src="./images/Athletic_Horizontal_Light_RGB.png" width="115" alt="Nebraska Wesleyan University logo featuring a coyote head and text in gold, white, and black." />
+                    </div>
+                    <div class="col-md-10">
+                        <h1>Traveling Prairie Wolf</h1>
+                        <p>This app is designed to help a college student prepare for upcoming travel responsibly.</p>
+                    </div>
                 </div>
             </section>
             <!-- Your Trip: the student enters trip details here (trip name, destination, travel dates, and event date).
@@ -91,7 +93,7 @@
             </section>
             <!-- Feature Areas: a description and link for each of the three feature pages
             (Absence Emails, Destination Weather, Key Dates and Deadlines). -->
-            <section class="mt-4 mb-5 p-3" id="nwu-lightgold">
+            <section class="mt-4 mb-5 p-3 nwu-lightgold">
                 <h2>Trip Planning</h2>
                 <div class="row g-3">
                     <div class="col-md-4">
